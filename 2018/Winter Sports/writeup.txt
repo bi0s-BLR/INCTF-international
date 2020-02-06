@@ -1,1 +1,16 @@
-xytxgfhj
+Step 1:
+  .When opened the given pdf we will see some message:"welcome to inctf finals,hope you solve this challenge fastest."
+  .This message doesnot seem to be useful.
+  .So lets try binwalk tool and check if any file is embedded in it.
+  .Now you will find a .7z zip file within it.
+Step 2:
+  .By extracting files in it, we get omg.pdf
+  .We find there is nothing inside the file but we can see that some text is highlighted when we use Ctrl+a. 
+    Text: What is Steganography ?Steganography is an amaz ?Sg
+  .So we can understand steganography is there in this file.
+  .As the name suggest, this might be snow steg.
+Step 3:
+  .For understanding snowsteg we prefer http://www.darkside.com.au/snow/
+  .By applying snow steg on this pdf we will be able to get flag.
+  Flag:inctf{w3lcom3_t0_7h3_w0rld_0f_whit3sp4c3}
+   
