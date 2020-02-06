@@ -1,1 +1,20 @@
-xyhjkk,mnbvqwerty
+Step 1:
+  .With the ggiven image and audio we have to analyse if any data is useful for us.
+  .Intially we should apply tool called "Stegsolve" on that image provided.
+  .Then we will get some key :"1518"
+Step 2:
+  .Now we should apply "Stego magic" tool on audio provided.
+  .It ask you to store the decrypted data in a file.
+  .After creating that file,It will ask us for key for decryption.
+  .As we know a key we can give 1518 as key.
+  .We will get a pdf file through decryption.
+Step 3:
+  .Applying binwalk on this pdf shows you a png file is encrypted in it.
+  .On opening the png file, we get a qr code.
+Step 4:
+  .Now by decrypting this qr code we will get some weird text.
+  .This weird text is a malbolge text.
+  .This malbolge code again doesnot make any sense.
+  .So we have to reverse whole text obtained and execute it with a malbolge online compiler.
+  .This executed code finally ends up giving the flag.
+  flag:"inctf{M1xiNg_uP_4udio_Qr_4nD_A_W3ird_L4ngu4ge_1s_So_L0vely}"
