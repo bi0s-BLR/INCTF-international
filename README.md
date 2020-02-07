@@ -1,2 +1,1 @@
-# INCTF-international
-challs and writeups for inctf international edition
+Challs and writeups for Practice.
